@@ -1,15 +1,17 @@
 import Input from './components/Input.tsx'
-import Container from './components/Container.tsx'
-import Button from './components/Button.tsx'
+import { useEffect, useRef } from 'react'
 
 function App() {
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    inputRef.current?.focus()
+  }, [])
+
   return (
     <main>
-      <Input id='name' label='Name' type='text'></Input>
+      <Input id='name' label='Name' type='text' ref={inputRef}></Input>
       <Input id='age' label='Age' type='number'></Input>
-      <Container as={Button} type='button'>
-        Click me
-      </Container>
     </main>
   )
 }
