@@ -10,9 +10,14 @@ function App() {
     inputRef.current?.focus()
   }, [])
 
+  function handleSave(data: unknown) {
+    const extractedData = data as { name: string; age: string }
+    console.log(extractedData)
+  }
+
   return (
     <main>
-      <Form>
+      <Form onSave={handleSave}>
         <Input id='name' label='Name' type='text' ref={inputRef}></Input>
         <Input id='age' label='Age' type='number'></Input>
         <Button>Save</Button>
