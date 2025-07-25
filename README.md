@@ -35,15 +35,6 @@ This application was built to provide a simple yet powerful tool for managing ti
 
 To get a local copy up and running, follow these simple steps.
 
-### Prerequisites
-
-Make sure you have Node.js and npm installed on your machine.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 1. Clone the repo
