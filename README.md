@@ -1,69 +1,60 @@
-# React + TypeScript + Vite
+# Timer Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a stylish and responsive timer management application built with modern web technologies. It allows users to create, manage, and track multiple timers simultaneously through a clean, dark-themed interface.
 
-Currently, two official plugins are available:
+[Link to Live Demo](https://natata08.github.io/timer/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## About The Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This application was built to provide a simple yet powerful tool for managing timers. It features a fully responsive design that works on all devices, robust form validation, and a state management system to keep all timers in sync. The project is automatically deployed to GitHub Pages using a CI/CD pipeline.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Create Custom Timers**: Add timers with a name and duration.
+- **Dynamic Timer Grid**: Timers are displayed in a fully responsive grid that adapts to any screen size.
+- **Visual Progress**: Each timer includes a progress bar that visually tracks the time remaining.
+- **State Management**: Uses React Context to manage the state of all timers efficiently.
+- **Input Validation**: The form for adding new timers includes validation to ensure all data is correct.
+- **Modern Dark Theme**: A stylish and calming dark theme for a great user experience.
+- **Automated Deployments**: CI/CD pipeline with GitHub Actions for automatic deployment to GitHub Pages.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Built With
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- CSS Modules for styling
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/natata08/timer.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the development server
+   ```sh
+   npm run dev
+   ```
