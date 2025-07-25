@@ -1,6 +1,6 @@
 # Timer Management App
 
-This is a stylish and responsive timer management application built with modern web technologies. It allows users to create, manage, and track multiple timers simultaneously through a clean, dark-themed interface.
+This is a stylish and responsive timer management application built with React, TypeScript, and Vite. It allows users to create, manage, and track multiple timers simultaneously through a clean, dark-themed interface.
 
 [Link to Live Demo](https://natata08.github.io/timer/)
 
